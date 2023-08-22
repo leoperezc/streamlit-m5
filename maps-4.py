@@ -4,7 +4,7 @@ import pandas as pd
 DATA_URL = 'uber-raw-data-sep14.csv'
 DATE_COLUMN = 'Date/Time'
 
-@st.cache
+@st.cache_data
 def load_data(number_rows):
   data = pd.read_csv(DATA_URL, nrows = number_rows)
   lowercase = lambda x: str(x).lower()

@@ -13,6 +13,10 @@ sidebar.write("Informacion de mi sidebar")
 st.header("Header de mi app")
 st.write("Informacion de mi app")
 
+sidebar.checkbox('Opción 1')
+sidebar.checkbox('Opción 2')
+sidebar.checkbox('Opción 3')
+
 if sidebar.checkbox('Show dataframe'):
     chart_data = pd.DataFrame(
        np.random.randint(1,10, size=(20, 3)),

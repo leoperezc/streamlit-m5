@@ -11,7 +11,7 @@ DATA_URL = ('movies.csv')
 
 import codecs
 
-@st.cache
+@st.cache_data
 def load_data(nrows):
     doc = codecs.open('movies.csv','rU','latin1')
     data = pd.read_csv(doc, nrows=nrows)
